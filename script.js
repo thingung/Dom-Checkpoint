@@ -172,7 +172,7 @@ function buyButtonClick(event, data) {
     const producer_id = getProducerId(event.target.id);
     const afford = attemptToBuyProducer(data, producer_id);
     if(afford) {
-      renderProducers(data); // for some reason this isn't working
+      renderProducers(data); 
       updateCPSView(data.totalCPS);
       updateCoffeeView(data.coffee);
 
